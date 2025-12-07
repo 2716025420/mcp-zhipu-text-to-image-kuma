@@ -1,0 +1,35 @@
+# 测试文件
+test_mcp.py
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# 开发环境
+.venv/
+venv/
+.env
+.env.local
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 文档草稿
+文生图mcp_prompt.md
+MCP开发发布验证流程.md
+NPM发布指南.md
+
+# Git
+.git/
+.gitignore
+
+# 日志
+*.log
+
+# 操作系统
+.DS_Store
+Thumbs.db
