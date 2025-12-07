@@ -1,5 +1,5 @@
 {
-    "name": "mcp-zhipu-text-to-image",
+    "name": "mcp-zhipu-text-to-image-kuma",
     "version": "1.0.0",
     "description": "MCP server for text-to-image generation using Zhipu AI CogView-4 API",
     "keywords": [
@@ -15,12 +15,12 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/yourusername/mcp-zhipu-text-to-image-kuma.git"
+        "url": "https://github.com/2716025420/mcp-zhipu-text-to-image-kuma.git"
     },
     "bugs": {
-        "url": "https://github.com/yourusername/mcp-zhipu-text-to-image-kuma/issues"
+        "url": "https://github.com/2716025420/mcp-zhipu-text-to-image-kuma/issues"
     },
-    "homepage": "https://github.com/yourusername/mcp-zhipu-text-to-image-kuma#readme",
+    "homepage": "https://github.com/2716025420/mcp-zhipu-text-to-image-kuma#readme",
     "bin": {
         "mcp-zhipu-text-to-image": "./run.js"
     },

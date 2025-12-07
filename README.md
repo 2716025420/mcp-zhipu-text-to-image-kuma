@@ -25,8 +25,8 @@ npm install -g mcp-zhipu-text-to-image
 ### 方式二：从源码安装
 
 ```bash
-git clone https://github.com/yourusername/mcp-zhipu-text-to-image.git
-cd mcp-zhipu-text-to-image
+git clone https://github.com/2716025420/mcp-zhipu-text-to-image-kuma.git
+cd mcp-zhipu-text-to-image-kuma
 pip install -r requirements.txt
 ```
 
