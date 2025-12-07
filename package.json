@@ -22,7 +22,7 @@
     },
     "homepage": "https://github.com/2716025420/mcp-zhipu-text-to-image-kuma#readme",
     "bin": {
-        "mcp-zhipu-text-to-image": "./run.js"
+        "mcp-zhipu-text-to-image-kuma": "./run.js"
     },
     "files": [
         "varable_try_mcp.py",
