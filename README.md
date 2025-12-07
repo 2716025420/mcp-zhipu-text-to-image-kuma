@@ -1,6 +1,6 @@
 # 文生图 MCP 服务器
 
-[![npm version](https://badge.fury.io/js/mcp-zhipu-text-to-image.svg)](https://www.npmjs.com/package/mcp-zhipu-text-to-image)
+[![npm version](https://badge.fury.io/js/mcp-zhipu-text-to-image-kuma.svg)](https://www.npmjs.com/package/mcp-zhipu-text-to-image-kuma)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 基于 FastMCP 框架实现的文本生成图片 MCP 服务器，集成智谱 API (CogView-4)。
@@ -19,7 +19,7 @@
 ### 方式一：通过 NPM 安装（推荐）
 
 ```bash
-npm install -g mcp-zhipu-text-to-image
+npm install -g mcp-zhipu-text-to-image-kuma
 ```
 
 ### 方式二：从源码安装
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 创建 `.env` 文件（或设置系统环境变量）：
 
 ```env
-ARK_API_KEY=your_actual_api_key_here
+ZHIPU_API_KEY=your_actual_api_key_here
 ```
 
 ## 使用方法
@@ -64,11 +64,11 @@ ARK_API_KEY=your_actual_api_key_here
 ```json
 {
   "mcpServers": {
-    "文生图服务": {
+    "mcp-zhipu-text-to-image-kuma": {
       "command": "python",
       "args": ["F:\\mcp3\\varable_try_mcp.py"],
       "env": {
-        "ARK_API_KEY": "your_api_key_here"
+        "ZHIPU_API_KEY": "your_api_key_here"
       }
     }
   }
@@ -80,11 +80,11 @@ ARK_API_KEY=your_actual_api_key_here
 ```json
 {
   "mcpServers": {
-    "文生图服务": {
+    "mcp-zhipu-text-to-image-kuma": {
       "command": "npx",
       "args": ["-y", "mcp-zhipu-text-to-image-kuma"],
       "env": {
-        "ARK_API_KEY": "your_api_key_here"
+        "ZHIPU_API_KEY": "your_api_key_here"
       }
     }
   }
@@ -100,11 +100,11 @@ ARK_API_KEY=your_actual_api_key_here
 ```json
 {
   "mcpServers": {
-    "文生图服务": {
+    "mcp-zhipu-text-to-image-kuma": {
       "command": "python",
       "args": ["F:\\mcp3\\varable_try_mcp.py"],
       "env": {
-        "ARK_API_KEY": "your_api_key_here"
+        "ZHIPU_API_KEY": "your_api_key_here"
       }
     }
   }

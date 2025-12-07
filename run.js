@@ -15,7 +15,7 @@ const mcpServer = spawn(pythonCommand, [mcpServerPath], {
     env: {
         ...process.env,
         // 从环境变量中读取 API Key
-        ARK_API_KEY: process.env.ARK_API_KEY || ''
+        ZHIPU_API_KEY: process.env.ZHIPU_API_KEY || ''
     }
 });
 

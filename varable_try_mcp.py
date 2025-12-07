@@ -20,14 +20,14 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 # 创建 FastMCP 实例
-mcp = FastMCP("文生图服务", dependencies=["httpx", "python-dotenv"])
+mcp = FastMCP("mcp-zhipu-text-to-image-kuma", dependencies=["httpx", "python-dotenv"])
 
 # 智谱 API 配置
 ZHIPU_API_URL = "https://open.bigmodel.cn/api/paas/v4/images/generations"
-API_KEY = os.getenv("ARK_API_KEY")
+API_KEY = os.getenv("ZHIPU_API_KEY")
 
 if not API_KEY:
-    logger.warning("警告: ARK_API_KEY 未在 .env 文件中设置")
+    logger.warning("警告: ZHIPU_API_KEY 未在 .env 文件中设置")
 
 
 @mcp.tool()
@@ -46,7 +46,7 @@ async def generate_image(prompt: str, size: str = "1024x1024", quality: str = "s
     logger.info(f"收到图片生成请求 - 提示词: {prompt}, 尺寸: {size}, 质量: {quality}")
     
     if not API_KEY:
-        error_msg = "错误: ARK_API_KEY 未配置,请在 .env 文件中设置"
+        error_msg = "错误: ZHIPU_API_KEY 未配置,请在 .env 文件中设置"
         logger.error(error_msg)
         return {
             "error": error_msg,

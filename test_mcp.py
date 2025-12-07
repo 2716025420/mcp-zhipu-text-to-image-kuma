@@ -79,6 +79,6 @@ async def test_mcp_server():
 
 if __name__ == "__main__":
     print("注意: 请确保 MCP 服务器正在运行 (python varable_try_mcp.py)")
-    print("注意: 请确保 .env 文件中已配置有效的 ARK_API_KEY\n")
+    print("注意: 请确保 .env 文件中已配置有效的 ZHIPU_API_KEY\n")
     
     asyncio.run(test_mcp_server())
